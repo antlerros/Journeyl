@@ -19,6 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".CreateGoalActivity" />
+        <activity android:name=".ExploreActivity" />
+        <activity android:name=".CreateMilestoneActivity" />
+        <activity android:name=".ReflectActivity" />
+        <activity android:name=".RoadmapActivity"></activity>
     </application>
 
 </manifest>

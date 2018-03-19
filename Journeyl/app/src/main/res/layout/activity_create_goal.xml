@@ -13,18 +13,20 @@
 
     <EditText
         android:hint="@string/enterGoal"
-        android:gravity="bottom|left"
+        android:gravity="bottom|start"
         android:layout_width="match_parent"
         android:layout_weight="0"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/enterGoal"/>
 
     <EditText
         android:layout_marginTop="10dp"
         android:hint="@string/enterDescription"
-        android:gravity="top|left"
+        android:gravity="top|start"
         android:layout_width="match_parent"
         android:layout_weight="10"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/enterDescription"/>
     <TextView
         android:layout_marginTop="10dp"
         android:text="Tags:"
@@ -32,10 +34,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"/>
     <Button
-        android:layout_gravity="bottom|right"
+        android:layout_gravity="bottom|end"
         android:text="save"
         android:textSize="18sp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/saveGoalButton"/>
 
 </LinearLayout>

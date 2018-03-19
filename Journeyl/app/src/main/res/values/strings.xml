@@ -4,4 +4,6 @@
     <string name="goals">Goals</string>
     <string name="enterGoal">Enter your goal</string>
     <string name="enterDescription">Enter description for your goal</string>
+    <string name="explore">Explore</string>
+    <string name="makeMilestone">Make Your Own</string>
 </resources>

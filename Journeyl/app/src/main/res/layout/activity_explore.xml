@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.antlerros95.journeyl.ExploreActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/milestoneTab"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/colorTextDefault"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabIndicatorColor="@color/colorSelect"
+        android:layout_marginBottom="1dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/exploreTab"
+            android:text="@string/explore"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/makeMilestoneTab"
+            android:text="@string/makeMilestone"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/explorePager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

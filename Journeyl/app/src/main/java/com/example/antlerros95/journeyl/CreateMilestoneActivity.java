@@ -8,6 +8,6 @@ public class CreateMilestoneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_milestone);
+        setContentView(R.layout.fragment_create_milestone);
     }
 }

@@ -23,7 +23,8 @@
         <activity android:name=".MilestonesActivity" />
         <activity android:name=".CreateMilestoneActivity" />
         <activity android:name=".ReflectActivity" />
-        <activity android:name=".RoadmapActivity"></activity>
+        <activity android:name=".RoadmapActivity" />
+        <activity android:name=".MilestoneDetailActivity"></activity>
     </application>
 
 </manifest>

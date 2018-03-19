@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateGoalActivity" />
-        <activity android:name=".ExploreActivity" />
+        <activity android:name=".MilestonesActivity" />
         <activity android:name=".CreateMilestoneActivity" />
         <activity android:name=".ReflectActivity" />
         <activity android:name=".RoadmapActivity"></activity>

@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.antlerros95.journeyl.ExploreActivity">
+    tools:context="com.example.antlerros95.journeyl.MilestonesActivity">
 
     <android.support.design.widget.TabLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:id="@+id/milestoneTab"
+        android:id="@+id/milestoneTabs"
         app:tabGravity="fill"
         app:tabMode="fixed"
         app:tabTextColor="@color/colorTextDefault"
@@ -21,7 +21,7 @@
         <android.support.design.widget.TabItem
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:id="@+id/exploreTab"
+            android:id="@+id/exploreMilestoneTab"
             android:text="@string/explore"/>
 
         <android.support.design.widget.TabItem
@@ -33,7 +33,7 @@
     </android.support.design.widget.TabLayout>
 
     <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/explorePager"
+        android:id="@+id/milestonePager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </android.support.v4.view.ViewPager>

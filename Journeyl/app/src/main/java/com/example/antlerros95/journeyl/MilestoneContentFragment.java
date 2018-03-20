@@ -1,5 +1,6 @@
 package com.example.antlerros95.journeyl;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -39,16 +40,26 @@ public class MilestoneContentFragment extends Fragment {
         ViewGroup rootView;
 
         if (page == 0) {
-            MilestoneListAdapter listAdapter;
             rootView = (ViewGroup) inflater.inflate(R.layout.fragment_milestone_list,
                     container, false);
             ListView listView = rootView.findViewById(R.id.milestonesList);
-            listView.setAdapter(new MilestoneListAdapter(getActivity(), getMilestones()));
+            final MilestoneListAdapter adapter = new MilestoneListAdapter(getActivity(), getMilestones());
+            listView.setAdapter(adapter);
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View v, int position, long l) {
+                    Milestone milestone = adapter.getItem(position);
+
+                    Intent intent = new Intent(getContext(), MilestoneDetailActivity.class);
+
+                    intent.putExtra("milestone", milestone.getID());
+
+                }
+            });
 
         } else {
             rootView = (ViewGroup) inflater.inflate(R.layout.fragment_create_milestone,
                     container, false);
-
         }
         return rootView;
     }
@@ -57,7 +68,7 @@ public class MilestoneContentFragment extends Fragment {
         ArrayList<Milestone> getMilestones() {
 
         // TODO: Get suggested milestones
-        return new ArrayList<Milestone>();
+        return new ArrayList<>();
     }
 
 }

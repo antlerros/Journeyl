@@ -12,7 +12,7 @@
     tools:context="com.example.antlerros95.journeyl.CreateGoalActivity">
 
     <EditText
-        android:hint="@string/enterGoal"
+        android:hint="Enter your goal"
         android:gravity="bottom|start"
         android:layout_width="match_parent"
         android:layout_weight="0"
@@ -21,7 +21,7 @@
 
     <EditText
         android:layout_marginTop="10dp"
-        android:hint="@string/enterGoalDescription"
+        android:hint="Enter description for your goal"
         android:gravity="top|start"
         android:layout_width="match_parent"
         android:layout_weight="10"

@@ -17,11 +17,11 @@
         android:layout_width="match_parent"
         android:layout_weight="0"
         android:layout_height="wrap_content"
-        android:id="@+id/enterGoal"/>
+        android:id="@+id/enterGoalName"/>
 
     <EditText
         android:layout_marginTop="10dp"
-        android:hint="@string/enterDescription"
+        android:hint="@string/enterGoalDescription"
         android:gravity="top|start"
         android:layout_width="match_parent"
         android:layout_weight="10"

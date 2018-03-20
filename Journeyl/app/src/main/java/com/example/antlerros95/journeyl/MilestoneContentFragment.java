@@ -55,7 +55,9 @@ public class MilestoneContentFragment extends Fragment {
 
 
         ArrayList<Milestone> getMilestones() {
-            return new ArrayList<Milestone>();
-        }
+
+        // TODO: Get suggested milestones
+        return new ArrayList<Milestone>();
+    }
 
 }

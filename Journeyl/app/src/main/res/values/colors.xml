@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorSelect">#21729f</color>
     <color name="colorTextDefault">#8b8b8b</color>
+    <color name="teal">#32bbc7</color>
+    <color name="lightGray">#bebebe</color>
+
 
 </resources>

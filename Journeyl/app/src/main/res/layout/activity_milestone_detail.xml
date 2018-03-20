@@ -84,6 +84,7 @@
             android:layout_alignTop="@id/difficultyTag"
             android:text="5"
             android:layout_toEndOf="@id/difficultyTag"/>
+
     </RelativeLayout>
 
     <Button

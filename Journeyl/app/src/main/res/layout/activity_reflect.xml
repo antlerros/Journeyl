@@ -1,9 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.antlerros95.journeyl.ReflectActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Milestone Name"
+        android:gravity="center"
+        android:textSize="22sp"/>
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="Description"
+            android:textStyle="bold"/>
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_text_view"
+            android:layout_below="@id/description"
+            android:layout_alignStart="@id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="4"
+            expandableTextView:animDuration="200">
+            <TextView
+                android:id="@id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:text="Some description"/>
+            <ImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right|bottom"
+                android:background="@android:color/transparent"/>
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reflectionHead"
+            android:text="Reflection"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="0sp"
+            android:id="@+id/milestoneReflection"
+            android:layout_below="@id/reflectionHead"
+            android:hint="Write some reflection"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignLeft="@id/reflectionHead"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingsHead"
+            android:text="Ratings"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingsHead"
+            android:id="@+id/difficultyTag"
+            android:text="Difficulty:"/>
+        <android.support.v7.widget.AppCompatSeekBar
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/difficultyTag"
+            android:layout_alignBottom="@id/difficultyTag"
+            android:thumb="@drawable/custom_thumb"/>
+    </RelativeLayout>
+</LinearLayout>

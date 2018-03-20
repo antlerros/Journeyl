@@ -5,12 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:orientation="vertical"
     tools:context="com.example.antlerros95.journeyl.MilestonesActivity">
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingTop="0dp"
+        android:hint="Milestone Title"
+        android:gravity="top|start"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Description"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:layout_height="0dp"
+        android:padding="0dp"
+        android:backgroundTint="@android:color/transparent"
         android:hint="@string/enterMilestoneDescription"
         android:gravity="top|start"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="Save"/>
+
 
 
 </LinearLayout>

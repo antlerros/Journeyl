@@ -16,12 +16,16 @@
         android:gravity="top|start"/>
     <TextView
         android:textStyle="bold"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:text="Description"/>
     <EditText
         android:layout_width="match_parent"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
         android:layout_weight="5"
         android:layout_height="0dp"
         android:padding="0dp"
